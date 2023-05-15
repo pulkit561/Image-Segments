@@ -18,6 +18,15 @@ React app to show an image's segments from click co-ordinates
  - ### Storage and database:
     1. Used **Firebase Storage** to store images. Every main image - [segments] pair is stored in a separate            folder reference with timestamp as it's name so that there are no overlaps even though uploaded images can        have same names.  
     2. Used **Firestore Database** to store main image URL and it's segments' URLs in a document. This is                required for figuring out the pixel containing segment.  
+
+## Workflow
+  1. Clone the repo.  
+  2. Go to the directory containing **package.json** and start the app through **npm start**.  
+  3. There are 2 inputs. Please select main image through one and it's segments through another.  
+  4. Press upload button, which persists the images in **Firebase Storage and Firestore**.  
+  5. Now you can view thumbnail of the main image. Click on it to view the full image.  
+  6. Click on any pixel of the full image to view it's segment.  
+  7. Click on the backdrop (outside full image) to exit full image mode.  
     
 ## Comments
   1. Added comments in the code for better understanding.  
